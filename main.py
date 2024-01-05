@@ -1,5 +1,6 @@
 
 import ui.mainMenu as menu
+import ui.customerMenu as cmenu
 import os
 if __name__ == '__main__':
     isActiveApp = True
@@ -13,7 +14,7 @@ if __name__ == '__main__':
             print("Error en el dato ingresado")
         else:
             if(opMainMenu == 1):
-                menu.generarClienteMenu()
+                cmenu.generarClienteMenu()
             elif (opMainMenu == 2):
                 pass
             elif (opMainMenu == 3):
