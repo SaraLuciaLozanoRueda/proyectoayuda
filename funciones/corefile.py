@@ -7,7 +7,7 @@ def NewFile(*param):
         json.dump(param[0],wf,indent=4)
 
 def AddData(*param):
-    with open(MY_DATABASE,"r+") as rwf:
+    with open(MY_DATABASE,'r+') as rwf:
         data_file=json.load(rwf)
         if (len(param) > 1):
             data_file.update({param[0]:param[1]})
